@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="pat-1">
+        <form name="myform">
+            Enter the number<br>
+            <input type="text" name="n" value=""><br>
+            Enter the number of rows<br>
+            <input type="text" name="r" value=""><br>
+            <input type="button" value="Check" onClick="p()">
+        </form>
+
+    </div>
+    <script>
+        function p() {
+
+            let n = document.myform.n.value;
+            let row = document.myform.r.value;
+            const primeno = [];
+
+            for (let i = 2; i <= n; i++) {
+                let isprime = true;
+                for (let j = 2; j * j <= i; j++) {
+                    if (i % j == 0) {
+                        isprime = false;
+                    }
+                }
+                if (isprime == true) {
+                    primeno.push(i);
+                }
+            }
+
+            let string = "";
+            let nst = 1;
+            let nsp = 3;
+            let primecount = 0;
+            for (let i = 1; i <= row; i++) {
+
+                for (let j = 1; j <= nsp; j++) {
+                    string += "&nbsp&nbsp";
+                }
+
+                for (let j = 1; j <= nst; j++) {
+                    let s = primeno[primecount];
+                    if (s != undefined) {
+                        string += s + ","
+                        primecount++;
+
+                    }
+
+                }
+
+                nsp--;
+                nst += 2;
+                string += "<br>";
+            }
+            document.write(string)
+
+        }
+
+
+    </script>
+</body>
+
+</html>

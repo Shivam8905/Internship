@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form name="myform">
+        Enter the number<br>
+        <input type="text" name="n" value="">
+        <button type="submit" onclick="f()">Submit</button>
+    </form>
+    <div id="pat-2">
+
+    </div>
+    <script>
+        function f(){
+
+            let n = document.myform.n.value;
+        let string = "";
+
+        let nst = 1;
+        let nsp = 3;
+        for (var i = 1; i <= n; i++) {
+            for (var j = 1; j <= nsp; j++) {
+                string += "&nbsp&nbsp";
+            }
+            for (let j = 1; j <= nst; j++) {
+                string += "&nbsp*&nbsp";
+            }
+
+            if (i < n / 2) {
+                nst++;
+                nsp--;
+            } else {
+                nst--;
+                nsp++;
+            }
+
+            string += "<br>";
+        }
+
+        document.write(string);
+
+
+        }
+
+
+    </script>
+</body>
+
+</html>

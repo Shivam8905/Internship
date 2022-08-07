@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>  is Prime or not ?</title>
+</head>
+        <form name="myform"> Enter the number below:
+            <input type="text" name=n value="">
+            <br><br>
+            <input type="button" value="Check" onClick="p()">
+            <br>
+        </form>
+</body>
+<script>
+    function p() {
+           var flag = true;
+           var n = document.myform.n.value;
+           n = parseInt(n)
+
+           for (var i = 2; i <= n - 1; i++)
+            if (n % i == 0 || n<3) {
+               flag = false;
+                break;
+           }
+
+           if (flag == true)
+
+               document.write(n + " is prime");
+                else
+               document.write(n + " is not prime");
+       }
+   </script>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<form name="myform">
+    Enter num1:<br>
+    <input type="text" name="a" value=""><br>
+    Enter num2:<br>
+    <input type="text" name="b" value=""><br>
+    Enter power:<br>
+    <input type="text" name="c" value=""><br>
+    <button type="submit" onclick="f()">Submit</button>
+</form>
+<body>
+</body>
+<Script>
+    function f(){
+        var sum = 0;
+    let n1 = document.myform.a.value;
+    let n2 = document.myform.b.value;
+    let power = document.myform.c.value;
+    for (var i = n1; i <= n2; i++) {
+        sum += Math.pow(i, power);
+    }
+    document.write(sum);
+    }
+
+
+</Script>
+
+</html>

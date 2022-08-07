@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Pay Form</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.1/css/bootstrap-select.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.1/js/bootstrap-select.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.7.1/css/bootstrap-datepicker.css"></script>
+
+
+    <style>
+        h2 {
+            color: burlywood;
+        }
+    </style>
+
+</head>
+<body>
+    <div class="container">
+        <form action="">
+            
+            <h2>Contact Information</h2>
+            <p>Name: * <input id="n" type="text" name="name"></p>
+
+            <fieldset>
+
+                <legend>Gender</legend>
+
+                <p>
+                    Male <input type="radio" name="gender" id="g" required> Female <input type="radio" name="gender"
+                        id="g" required> Other <input type="radio" name="gender" id="g" required>
+                </p>
+
+            </fieldset>
+
+            <p>
+                Address: <textarea name="address" id="address" cols="30" rows="3" required ></textarea>
+            </p>
+
+            <p>
+                Email: <input type="email" name="email" id="email" required>
+            </p>
+
+            <p>
+                 Pincode: <input type="number" name="pincode" id="pincode" required>
+            </p>
+
+            <hr>
+
+            <p>Card Type:
+
+                <select name="card_type" id="card_type" required>
+                    <option value="">--Select a card Type-- </option>
+                    <option value="visa">Visa</option>
+                    <option value="rupay">Rupay</option>
+                    <option value="mastercard">Mastercard</option>
+                </select>
+
+            </p>
+
+            <p>
+                Phone Number * <input type="number" name="Card_number" id="Card_number" required>
+            </p>
+
+            <p>
+                Date: <input type="date" name="exp_date" id="exp_date" required>
+            </p>
+
+            <p>Password <input type="password" name="cvv" id="cvv" required></p>
+
+            <input type="submit" value="Pay Now" onclick="f()">
+
+            <!-- <script>
+                async function fn() {
+                let myPromise = new Promise(function(resolve, reject) {
+                  resolve => f();
+                    });
+                    //    document.getElementById("demo").innerHTML = await myPromise;
+} -->
+
+<!-- // myDisplay(); -->
+            </script>
+
+        </form>
+    </div>
+
+    <div id="name">
+
+    </div>
+
+    <script>
+     
+       function f() {
+
+        var name = document.getElementById("n").value;
+        var regName = /^[a-zA-Z ]{2,10}$/;
+        if(regName.test(name)){
+    
+}else{
+     //await sleep(3000);
+    document.getElementById("err").innerHTML = "Invalid name given length shiold be between 2 to 10.";
+    return;
+}
+   
+        var address = document.getElementById("address").value;
+
+        var email = document.getElementById("email").value;
+        var mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+        if(mailformat.test(email))
+{  
+
+}  
+else  
+{  
+    document.getElementById("err").innerHTML = "You have entered an invalid email address!";  
+return;
+}
+
+        var pincode = document.getElementById("pincode").value;
+        var card_type = document.getElementById("card_type").value;
+        var Card_number = document.getElementById("Card_number").value;
+        var phoneno = /^\d{10}$/;
+        if(phoneno.test(Card_number)){
+            
+        }else{
+            document.getElementById("err").innerHTML = "You have entered an invalid Phone number!";  
+return;
+        }
+      
+        var exp_date = document.getElementById("exp_date").value;
+
+        var newPassword = document.getElementById("cvv").value;
+        var minNumberofChars = 6;
+        var maxNumberofChars = 16;
+    var regularExpression  = /^(?=.*[0-9])(?=.*[!@#$%^&*])[a-zA-Z0-9!@#$%^&*]{6,16}$/;
+   // alert(newPassword); 
+    if(newPassword.length < minNumberofChars || newPassword.length > maxNumberofChars){
+        return false;
+    }
+    if(!regularExpression.test(newPassword)) {
+        document.getElementById("err").innerHTML ="password should contain atleast one number and one special character";
+        return false;
+    }
+
+
+        document.write(name)
+        document.write("<br>");
+        document.write(address)
+        document.write("<br>");
+        document.write(email)
+        document.write("<br>");
+        document.write(pincode)
+        document.write("<br>");
+        document.write(card_type)
+        document.write("<br>");
+        document.write(Card_number)
+        document.write("<br>");
+        document.write(exp_date)
+        document.write("<br>");
+        document.write(cvv)
+        }
+    </script>
+    <div id="err" style="color: red;"></div>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form name="myform"> Enter the temperature below:
+        <input type="text" name=n value="">
+        <br><br>
+        Enter c or f(c if its Celsius f if its Fahrenheit)
+        <input type="text" name=t value="">
+        <br><br>
+        <input type="button" value="Check" onClick="p()">
+        <br>
+    </form>
+    
+</body>
+<Script>
+    function p(){
+
+var temp;
+let choose = document.myform.n.value;
+let val = document.myform.t.value;
+if(val == 'c'){
+    temp= (choose * (1.8) ) + 32;
+    document.write("Fahrenheit value: " + temp);
+}
+else{
+    temp= (choose - 32 ) / (1.8);
+    document.write("Celsius value: " + temp);
+} 
+
+    }
+
+
+</Script>
+</html>
