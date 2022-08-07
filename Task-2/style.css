@@ -1,0 +1,318 @@
+nav{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 150px;
+    height: 120px;
+    margin-left: 150px;
+    margin-top: 50px;
+    background: #FFFFFF;
+}
+ul{
+    display: flex;
+    font-size: x-large;
+    gap: 50px;
+    list-style: none;
+    font-weight: bold;
+    margin-left: 200px;
+}
+
+.main_top{
+    display: flex;
+    flex-direction: row;
+}
+
+.main_top>.main_top_left>.img1{
+position: absolute;
+width: 557px;
+height: 555px;
+left: 308px;
+top: 246px;
+}
+.main_top>.main_top_left>.img2{
+position: absolute;
+width: 363px;
+height: 261px;
+left: 591px;
+top: 655px;
+}
+
+.main_top>.main_top_right>div>.img3{
+position: absolute;
+width: 445px;
+height: 116px;
+left: 1065px;
+top: 383px;
+
+}
+
+.main_top>.main_top_right>div>p{
+position: absolute;
+width: 543px;
+height: 146px;
+left: 1065px;
+top: 523px;
+color: #27273F;
+}
+
+.main_top>.main_top_right>div>button{
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 17px;
+gap: 10px;
+color: #FFFFFF;
+
+position: absolute;
+width: 194px;
+height: 53px;
+left: 1065px;
+top: 705px;
+
+background: #000000;
+
+}
+
+.mid{
+position: absolute;
+width: 100%;
+height: 250px;
+left: 0px;
+top: 1036px;
+background: #F3F3F3;
+}
+
+.mid>p{
+    padding: 30px;
+    color: #27273F;
+
+}
+
+.mid>div>button{
+    margin-left: 40%;
+    color: #FFFFFF;
+    background: #000000;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 50px;
+    padding-right: 50px;
+
+
+}
+
+div>.rectangle{
+    position: absolute;
+width: 292px;
+height: 290px;
+left: 1328px;
+top: 1659px;
+
+
+background: #C19B76;
+}
+
+div>div>.image4{   
+    position: absolute;
+    width: 1223px;
+    height: 414px;
+    left: 300px;
+    top: 1746px;
+    z-index: 1;
+    }
+
+.below_img>img{
+    position: absolute;
+    left: 900px;
+    top: 2300px;
+}
+
+.buttom-para>p{
+    position: absolute;
+    left: 400px;
+    top: 2370px; 
+    color: #27273F;
+}
+
+.list1 > .a1{
+    position: absolute;
+    left: 700px;
+    top: 2540px; 
+
+}
+.list1 > .a2{
+    position: absolute;
+    left: 700px;
+    top: 2580px; 
+
+}
+.list1 > .a3{
+    position: absolute;
+    left: 700px;
+    top: 2620px; 
+
+}
+.list1 > .a4{
+    position: absolute;
+    left: 700px;
+    top: 2660px; 
+
+}
+.list2 > .a5{
+    position: absolute;
+    left: 1000px;
+    top: 2540px; 
+
+}
+.list2 > .a6{
+    position: absolute;
+    left: 1000px;
+    top: 2580px; 
+
+}
+.list2 > .a7{
+    position: absolute;
+    left:1000px;
+    top: 2620px; 
+
+}
+.list2 > .a8{
+    position: absolute;
+    left: 1000px;
+    top: 2660px; 
+
+}
+
+.below_ima_or{
+position: absolute;
+width: 242px;
+height: 35px;
+left: 500px;
+top: 2850px;
+}
+.tent1{
+position: absolute;
+left: 10px;
+top: 2930px;
+
+}
+
+.tent2{
+    position: absolute;
+    left: 1800px;
+     top: 2930px;
+}
+
+.b1{
+    position: absolute;
+    left: 1000px;
+    top: 2930px;
+    color: #000000;
+    font-weight: 600;
+}
+.b2{
+    position: absolute;
+    left: 1000px;
+    top: 2960px;
+    color: #797979;
+}
+.b3{
+    position: absolute;
+    left: 1000px;
+    top: 3010px;
+    color: #000000;
+    font-weight: 600;
+}
+.b4{
+    position: absolute;
+    left: 1000px;
+    top: 3040px;
+    color: #797979;
+}
+.b5{
+    position: absolute;
+    left: 1000px;
+    top: 3070px;
+    color: #000000;
+    font-weight: 600;
+}
+.b6{
+    position: absolute;
+    left: 1000px;
+    top: 3100px;
+    color: #797979;
+}
+
+.c1{
+    position: absolute;
+    left: 1400px;
+    top: 2930px;
+    color: #000000;
+    font-weight: 600;
+}
+.c2{
+    position: absolute;
+    left: 1400px;
+    top: 2960px;
+    color: #797979;
+}
+.c3{
+    position: absolute;
+    left: 1400px;
+    top: 2990px;
+    color: #797979;
+}
+.c4{
+    position: absolute;
+    left: 1400px;
+    top: 3020px;
+    color: #797979;
+}
+.c5{
+    position: absolute;
+    left: 1400px;
+    top: 3050px;
+    color: #797979;
+}
+.c6{
+    position: absolute;
+    left: 1400px;
+    top: 3080px;
+    color: #797979;
+}
+.c7{
+    position: absolute;
+    left: 1400px;
+    top: 3110px;
+    color: #797979;
+}
+.c8{
+    position: absolute;
+    left: 1400px;
+    top: 3140px;
+    color: #797979;
+}
+.footer{
+    display: flex;
+    flex-direction: row;
+}
+.f1{
+    position: absolute;
+    left: 500px;
+    top: 3300px;
+
+   
+}
+.f1 .insta{
+    height: 19px;
+    width: 19px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.f2{
+    position: absolute;
+    left: 1700px;
+    top: 3300px;
+    color: #797979;
+}
+
